@@ -1,0 +1,21 @@
+# Class: rsyslog
+#   This module manages rsyslog
+#
+# Definition:
+#   rsyslog::config
+#
+# Parameters:
+#   $config - specify config file
+#   $host   - specify host (Hiera)
+#
+# Actions:
+#   Installs the rsyslog.conf etc.
+#
+# Requires:
+#   -
+#
+# Sample Usage:
+#   rsyslog::config { "/etc/rsyslog.conf":
+#      config => "client",
+#      host   => hiera('host'),
+#   }

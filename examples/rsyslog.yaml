@@ -1,0 +1,4 @@
+---
+host:
+   koios: 'log1.%{domain}'
+   theia: 'log2.%{domain}'

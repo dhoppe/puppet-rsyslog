@@ -1,0 +1,42 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# /etc/puppet/modules/production/rsyslog/files/common/etc/logrotate.d/rsyslog
+#
+
+/var/log/rsyslog/*/syslog
+{
+	rotate 7
+	daily
+	missingok
+	notifempty
+	delaycompress
+	compress
+	postrotate
+		invoke-rc.d rsyslog reload > /dev/null
+	endscript
+}
+
+/var/log/rsyslog/*/mail.info
+/var/log/rsyslog/*/mail.warn
+/var/log/rsyslog/*/mail.err
+/var/log/rsyslog/*/mail.log
+/var/log/rsyslog/*/daemon.log
+/var/log/rsyslog/*/kern.log
+/var/log/rsyslog/*/auth.log
+/var/log/rsyslog/*/user.log
+/var/log/rsyslog/*/lpr.log
+/var/log/rsyslog/*/cron.log
+/var/log/rsyslog/*/debug
+/var/log/rsyslog/*/messages
+{
+	rotate 4
+	weekly
+	missingok
+	notifempty
+	compress
+	delaycompress
+	sharedscripts
+	postrotate
+		invoke-rc.d rsyslog reload > /dev/null
+	endscript
+}

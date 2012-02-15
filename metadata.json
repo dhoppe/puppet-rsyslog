@@ -1,0 +1,30 @@
+{
+  "name": "dhoppe-rsyslog",
+  "author": "Dennis Hoppe",
+  "description": "Rsyslog Module for Debian, Ubuntu",
+  "license": "GPLv2",
+  "project_page": "http://github.com/dhoppe/puppet-rsyslog",
+  "source": "git://github.com/dhoppe/puppet-rsyslog",
+  "summary": "Rsyslog Module",
+  "version": "0.0.1",
+  "checksums": {
+    "Modulefile": "07d62f5d7d8365907cdc85b36ec6f698",
+    "README": "d622edf5474c46111bdd5ca762f83cc6",
+    "examples/rsyslog.yaml": "94313b66c85567733efa9715c4cc0f58",
+    "files/common/etc/logrotate.d/rsyslog": "8b08f97a5a98932e836e0bd072bab452",
+    "manifests/init.pp": "c789dd224f9e11e6dffd87b38bd08743",
+    "manifests/master.pp": "927d823a7fd41ce12ac689ec7a889baf",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "templates/lenny/etc/rsyslog-client.conf.erb": "4ba1d9a4d27d58672821788e39b99db8",
+    "templates/lenny/etc/rsyslog-server.conf.erb": "2cfc2cda28bcf82d9b502a8182446875",
+    "templates/maverick/etc/rsyslog-client.conf.erb": "494afc4c6028d89c61f9817d3dc1c609",
+    "templates/maverick/etc/rsyslog-server.conf.erb": "2e373815dce3d818d98dea8e8e0bbda9",
+    "templates/natty/etc/rsyslog-client.conf.erb": "df7c4bf128384cfbf61ec4dac4d2d440",
+    "templates/natty/etc/rsyslog-server.conf.erb": "e8cf71a3a431db097dc8ef3931d5a966",
+    "templates/squeeze/etc/rsyslog-client.conf.erb": "4ba1d9a4d27d58672821788e39b99db8",
+    "templates/squeeze/etc/rsyslog-server.conf.erb": "2cfc2cda28bcf82d9b502a8182446875",
+    "tests/init.pp": "c13c3b8ff39b689c7fb9142a1b0d6c86"
+  },
+  "dependencies": []
+}
