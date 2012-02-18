@@ -16,7 +16,7 @@ class rsyslog {
 		host   => hiera('host'),
 	}
 
-	if "::lsbdistid" == "Ubuntu" {
+	if $::lsbdistid == "Ubuntu" {
 		file { "/etc/rsyslog.d/50-default.conf":
 			ensure => absent,
 		}
