@@ -1,4 +1,6 @@
 class rsyslog {
+	validate_hash(hiera('host'))
+
 	define rsyslog::config($config = false, $host = false) {
 		file { "$name":
 			owner   => root,
