@@ -1,9 +1,12 @@
-class rsyslog {
+class rsyslog (
+  $host = $rsyslog::params::host
+) inherits rsyslog::params {
+
   validate_hash(hiera('host'))
 
   rsyslog::config { '/etc/rsyslog.conf':
     config => 'client',
-    host   => hiera('host'),
+    host   => $host,
   }
 
   if $::lsbdistid == 'Ubuntu' {
@@ -14,8 +17,8 @@ class rsyslog {
 
   file { '/var/spool/rsyslog':
     ensure => directory,
-    owner  => root,
-    group  => root,
+    owner  => 'root',
+    group  => 'root',
     mode   => '0755',
   }
 

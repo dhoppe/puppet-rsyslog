@@ -1,7 +1,7 @@
 class rsyslog::master inherits rsyslog {
   file { '/etc/logrotate.d/rsyslog':
-    owner   => root,
-    group   => root,
+    owner   => 'root',
+    group   => 'root',
     mode    => '0644',
     source  => 'puppet:///modules/rsyslog/common/etc/logrotate.d/rsyslog',
     require => [
@@ -16,8 +16,8 @@ class rsyslog::master inherits rsyslog {
 
   file { '/var/log/rsyslog':
     ensure => directory,
-    owner  => root,
-    group  => root,
+    owner  => 'root',
+    group  => 'root',
     mode   => '0755',
   }
 

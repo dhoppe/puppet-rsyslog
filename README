@@ -6,7 +6,7 @@
 #
 # Parameters:
 #   $config - specify config file
-#   $host   - specify host (Hiera)
+#   $host   - specify host
 #
 # Actions:
 #   Installs the rsyslog.conf etc.
@@ -15,7 +15,7 @@
 #   -
 #
 # Sample Usage:
-#   rsyslog::config { "/etc/rsyslog.conf":
-#      config => "client",
-#      host   => hiera('host'),
+#   rsyslog::config { '/etc/rsyslog.conf':
+#     config => 'client',
+#     host   => $host,
 #   }
