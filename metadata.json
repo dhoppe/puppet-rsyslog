@@ -8,8 +8,10 @@
   "summary": "Rsyslog Module",
   "version": "0.0.8",
   "checksums": {
+    "Gemfile": "d5ce5c80f3c31e583507eb80b61b7400",
     "Modulefile": "638727f842aa8051c25eaadbea6d98ac",
     "README": "a1d226936f037a8e82c7f32e1d4d6e27",
+    "Rakefile": "aac3a0179a3d0a7749c5dfc1384829e5",
     "examples/rsyslog.yaml": "94313b66c85567733efa9715c4cc0f58",
     "files/common/etc/logrotate.d/rsyslog": "8b08f97a5a98932e836e0bd072bab452",
     "manifests/config.pp": "bf1dadf7404c1ca8bb0c14b08b493edf",
