@@ -1,6 +1,6 @@
 class rsyslog::params {
   case $::lsbdistcodename {
-    'lenny', 'squeeze', 'maverick', 'natty': {
+    'squeeze', 'maverick', 'natty': {
       $host = hiera('host')
     }
     default: {
