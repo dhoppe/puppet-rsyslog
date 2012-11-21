@@ -19,11 +19,9 @@
     "manifests/config.pp": "bf1dadf7404c1ca8bb0c14b08b493edf",
     "manifests/init.pp": "1e6a6fdc364bc91c785984f905228b4f",
     "manifests/master.pp": "96fb8241e5649baca49b26294632e80f",
-    "manifests/params.pp": "41f002c14c428f550c2532f248a6e166",
+    "manifests/params.pp": "43fb163ae81ec9bb60c4c7548ac65b9e",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
-    "templates/natty/etc/rsyslog-client.conf.erb": "df7c4bf128384cfbf61ec4dac4d2d440",
-    "templates/natty/etc/rsyslog-server.conf.erb": "8b2c998ede0c504fc8e57894ec514fc8",
     "templates/squeeze/etc/rsyslog-client.conf.erb": "4ba1d9a4d27d58672821788e39b99db8",
     "templates/squeeze/etc/rsyslog-server.conf.erb": "5249ea7d9b7a751f198d3c61cd357996",
     "tests/init.pp": "c13c3b8ff39b689c7fb9142a1b0d6c86"
